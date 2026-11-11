@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom';
+import styles from './Footer.module.css';
 
 export default function Footer() {
   return (
-    <footer className="footer-atelier py-5">
+    <footer className={`${styles.footerAtelier} py-5`}>
       <div className="container">
         <div className="row g-4 align-items-center justify-content-between text-center text-md-start">
           

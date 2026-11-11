@@ -1,10 +1,10 @@
 import { Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Home from './pages/Home';
-import Portfolio from './pages/Portfolio';
-import Contatti from './pages/Contact';
-import Footer from './components/Footer';
-import ProjectDetail from './pages/ProjectDetail';
+import Navbar from './components/Navbar/Navbar';
+import Home from './pages/Home/Home';
+import Portfolio from './pages/Portfolio/Portfolio';
+import Contatti from './pages/Contact/Contact';
+import Footer from './components/Footer/Footer';
+import ProjectDetail from './pages/ProjectDetail/ProjectDetail';
 
 export default function App() {
   return (

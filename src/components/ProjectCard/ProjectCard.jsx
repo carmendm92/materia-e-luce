@@ -1,11 +1,12 @@
 import { Link } from 'react-router-dom';
+import styles from './ProjectCard.module.css';
 
 export default function ProjectCard({ progetto }) {
   return (
-    <div className="card-atelier h-100 d-flex flex-column justify-content-between">
+    <div className={`${styles.cardAtelier} h-100 d-flex flex-column justify-content-between`}>
       
       {/* Anteprima Immagine */}
-      <div className="ratio ratio-16x9 card-img-wrapper d-flex align-items-center justify-content-center">
+      <div className={`ratio ratio-16x9 ${styles.cardImgWrapper} d-flex align-items-center justify-content-center`}>
         {progetto.immagini && progetto.immagini[0] ? (
           <img 
             src={progetto.immagini[0]} 
@@ -37,7 +38,7 @@ export default function ProjectCard({ progetto }) {
           {/* Tag */}
           <div className="d-flex flex-wrap gap-2 pt-2 border-top border-atelier mb-3">
             {progetto.tag && progetto.tag.map((t, idx) => (
-              <span key={idx} className="badge badge-atelier px-2 py-1">
+              <span key={idx} className={`badge ${styles.badgeAtelier} px-2 py-1`}>
                 {t}
               </span>
             ))}

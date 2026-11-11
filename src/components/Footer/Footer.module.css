@@ -1,0 +1,23 @@
+.footerAtelier {
+  background-color: var(--text-dark);
+  color: #ffffff;
+  border-top: 1px solid var(--border-color);
+}
+
+.footerAtelier p,
+.footerAtelier a {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.875rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footerAtelier a:hover {
+  color: #ffffff;
+}
+
+.brandTitle {
+  font-family: var(--font-serif);
+  color: #ffffff;
+  font-size: 1.1rem;
+}

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import { progetti } from '../data/progetti';
-import ProjectCard from '../components/ProjectCard';
+import { progetti } from '../../data/progetti';
+import ProjectCard from '../../components/ProjectCard/ProjectCard';
 
 export default function Portfolio() {
   return (

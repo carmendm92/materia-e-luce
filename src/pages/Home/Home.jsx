@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import logoSrc from '../../assets/logo.png';
 
 export default function Home() {
   return (
@@ -9,6 +10,15 @@ export default function Home() {
         <div className="row py-lg-5">
           <div className="col-lg-8 col-md-10 mx-auto">
             
+            {/* Logo in evidenza prima del titolo */}
+            <div className="d-flex justify-content-center mb-4">
+              <img 
+                src={logoSrc} 
+                alt="Materia & Luce Logo" 
+                style={{ height: '130px', width: 'auto', objectFit: 'contain' }} 
+              />
+            </div>
+
             <span className="text-uppercase fs-6 fw-semibold d-block mb-3 text-amber letter-spacing-3">
               Falegnameria & Design su Misura
             </span>

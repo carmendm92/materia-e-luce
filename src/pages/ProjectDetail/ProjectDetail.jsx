@@ -1,5 +1,5 @@
 import { useParams, Link } from 'react-router-dom';
-import { progetti } from '../data/progetti';
+import { progetti } from '../../data/progetti';
 
 export default function ProjectDetail() {
   const { id } = useParams();

@@ -1,0 +1,30 @@
+.card-atelier {
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-atelier:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+}
+
+.card-img-wrapper {
+  background-color: rgba(108, 117, 125, 0.05);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.badge-atelier {
+  background-color: #f8f9fa;
+  color: var(--text-dark);
+  border: 1px solid var(--border-color);
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+
+.box-atelier {
+  background-color: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+}
