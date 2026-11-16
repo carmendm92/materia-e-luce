@@ -1,5 +1,9 @@
 import { Link } from 'react-router-dom';
-import logoSrc from '../../assets/logo.png';
+import LightSlider from '../../components/LightSliders/LightSlider';
+import logoSrc from '/assets/logo.png'
+import imgAccesa from '/assets/Projects/sottoscala_1.webp';
+import imgSpenta from '/assets/Projects/sottoscala_2.webp';
+import styles from './Home.module.css';
 
 export default function Home() {
   return (
@@ -11,11 +15,11 @@ export default function Home() {
           <div className="col-lg-8 col-md-10 mx-auto">
             
             {/* Logo in evidenza prima del titolo */}
-            <div className="d-flex justify-content-center mb-4">
+            <div className="allora c'è dello style inline. tolòd-flex justify-content-center mb-4">
               <img 
                 src={logoSrc} 
-                alt="Materia & Luce Logo" 
-                style={{ height: '130px', width: 'auto', objectFit: 'contain' }} 
+                alt="Materia & Luce Logo"
+                className={`${styles.heroLogo} img-fluid`}
               />
             </div>
 
@@ -44,24 +48,30 @@ export default function Home() {
         </div>
       </section>
 
-      {/* --- 2. SEZIONE CONCEPT --- */}
-      <section className="py-5 border-top border-atelier">
+    <section className="py-5 border-top border-atelier">
         <div className="container py-4">
-          <div className="row align-items-center">
-            <div className="col-lg-6 mb-4 mb-lg-0 text-lg-start text-center">
+          <div className="row align-items-center g-5">
+            <div className="col-lg-5 text-lg-start text-center">
+              <span className="text-uppercase small fw-semibold d-block mb-2 text-amber letter-spacing-2">
+                L'atmosfera
+              </span>
               <h2 className="h3 fw-normal mb-3 font-serif text-dark">
                 Opere uniche, pensate per i tuoi spazi
               </h2>
               <p className="text-muted">
                 Ogni ambiente richiede soluzioni che i prodotti in serie non possono offrire. Uniamo la lavorazione artigianale del legno a un'attenta cura dei dettagli e della luce, creando atmosfere armoniose e curate in ogni singolo aspetto.
               </p>
+              <p className="text-muted small fst-italic mt-3">
+                ← Trascina il cursore sull'immagine per scoprire l'effetto della luce →
+              </p>
             </div>
-            <div className="col-lg-6">
-              <div className="p-4 border border-atelier rounded-3 text-center shadow-sm bg-white">
-                <span className="display-4 d-block mb-2 text-amber">◆</span>
-                <h3 className="h5 mb-2 text-dark">Artigianato & Versatilità</h3>
-                <p className="text-muted small m-0">Competenza trasversale e flessibilità tecnica per seguire ogni fase del progetto con la massima precisione.</p>
-              </div>
+
+            <div className="col-lg-7">
+              <LightSlider 
+                imgAccesa={imgAccesa} 
+                imgSpenta={imgSpenta} 
+                alt="Sottoscala su misura con illuminazione"
+              />
             </div>
           </div>
         </div>

@@ -32,6 +32,9 @@ export default function Footer() {
             <p className="m-0">
               &copy; {new Date().getFullYear()} Materia & Luce. Tutti i diritti riservati.
             </p>
+            <p className="m-0">
+              Concept & Sviluppo Web <br/> Progetto dimostrativo realizzato in React & Vite.
+            </p>
           </div>
 
         </div>

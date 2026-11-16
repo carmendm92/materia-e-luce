@@ -1,0 +1,29 @@
+.heroLogo {
+  width: 100%;
+  max-width: 280px; /* Smartphone */
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .heroLogo {
+    max-width: 480px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  .heroLogo {
+    max-width: 680px; /* Aumentato per dare più impatto su desktop */
+  }
+}
+
+/* Schermi molto grandi */
+@media (min-width: 1200px) {
+  .heroLogo {
+    max-width: 780px;
+  }
+}

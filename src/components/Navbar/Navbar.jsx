@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import logoSrc from '../../assets/logo_due.png';
+import logoSrc from '/assets/logo_due.png';
 import styles from './Navbar.module.css';
 
 export default function Navbar() {

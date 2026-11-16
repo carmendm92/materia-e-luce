@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { progetti } from '../../data/progetti';
+import { projects } from '../../data/ProjectsData';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
 
 export default function Portfolio() {
@@ -27,7 +27,7 @@ export default function Portfolio() {
       <section className="pb-5 border-top border-atelier">
         <div className="container py-5">
           <div className="row g-4">
-            {progetti.map((p) => (
+            {projects.map((p) => (
               <div key={p.id} className="col-md-6 col-lg-4">
                 <ProjectCard progetto={p} />
               </div>
