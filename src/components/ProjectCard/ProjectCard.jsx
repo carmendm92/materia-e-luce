@@ -36,12 +36,12 @@ export default function ProjectCard({ progetto }) {
     <div ref={cardRef} className={`${styles.cardAtelier} h-100 d-flex flex-column justify-content-between`}>
       
       {/* Anteprima Immagine */}
-      <div className={`ratio ratio-16x9 ${styles.cardImgWrapper} overflow-hidden d-flex align-items-center justify-content-center`}>
+      <div className={`ratio ratio-4x3 bg-white ${styles.cardImgWrapper} overflow-hidden d-flex align-items-center justify-content-center`}>
         {progetto.images && progetto.images[0] ? (
           <img 
             src={progetto.images[0]} 
             alt={progetto.title} 
-            className={`w-100 h-100 object-fit-cover transition-transform duration-500 ${styles.cardImg} ${isInView ? styles.inView : ''}`} 
+            className={`w-100 h-100 object-fit-contain p-2 transition-transform duration-500 ${styles.cardImg} ${isInView ? styles.inView : ''}`} 
           />
         ) : (
           <span className="small text-uppercase text-muted letter-spacing-1">

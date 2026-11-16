@@ -63,11 +63,14 @@ export default function ProjectDetail() {
                           key={index} 
                           className={`carousel-item ${index === activeIndex ? 'active' : ''}`}
                         >
-                          <div className="ratio ratio-16x9">
+                          <div 
+                            className="d-flex align-items-center justify-content-center p-2 bg-white"
+                            style={{ height: '500px', maxHeight: '70vh' }}
+                          >
                             <img 
                               src={imgUrl} 
                               alt={`${progetto.title} - Foto ${index + 1}`} 
-                              className="w-100 h-100 object-fit-cover"
+                              className="w-100 h-100 object-fit-contain"
                             />
                           </div>
                         </div>
@@ -111,7 +114,7 @@ export default function ProjectDetail() {
                           key={index}
                           type="button"
                           onClick={() => setActiveIndex(index)}
-                          className={`p-0 border rounded-2 overflow-hidden flex-shrink-0 transition-all ${
+                          className={`p-0 border rounded-2 overflow-hidden flex-shrink-0 transition-all bg-white ${
                             index === activeIndex 
                               ? 'border-dark border-2 opacity-100 shadow-sm' 
                               : 'border-atelier opacity-50'
@@ -121,7 +124,7 @@ export default function ProjectDetail() {
                           <img 
                             src={imgUrl} 
                             alt={`Miniatura ${index + 1}`} 
-                            className="w-100 h-100 object-fit-cover"
+                            className="w-100 h-100 object-fit-contain"
                           />
                         </button>
                       ))}
@@ -129,7 +132,10 @@ export default function ProjectDetail() {
                   )}
                 </div>
               ) : (
-                <div className="ratio ratio-16x9 rounded-3 border border-atelier d-flex align-items-center justify-content-center bg-white">
+                <div 
+                  className="rounded-3 border border-atelier d-flex align-items-center justify-content-center bg-white"
+                  style={{ height: '400px', maxHeight: '60vh' }}
+                >
                   <span className="text-muted small text-uppercase letter-spacing-1">
                     Nessuna immagine disponibile
                   </span>
